@@ -5,7 +5,7 @@ download :
 example : 
 	mkdir -p build
 	mkdir -p output
-	./scripts/html-strip.sh ./www.newadvent.org/cathen/07207a.htm > example.html
+	./scripts/html-strip.sh ./cathen/07207a.htm > example.html
 	pandoc example.html -o example.tex
 
 	head -n 32 ./templates/article-base.tex > example-article.tex
